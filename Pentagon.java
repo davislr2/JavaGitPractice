@@ -12,4 +12,8 @@ public class Pentagon extends Shape {
 		double area = (5 * Math.pow(sideLength, 2)) / (4 * Math.tan(Math.PI / 5));
 		return area; 
 	}
+
+	public void setSide(double a) {
+		sideLength = a;
+	}
 }
