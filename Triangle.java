@@ -1,20 +1,20 @@
 
 public class Triangle extends Shape {
 	
-	private int base;
-	private int height;
+	public double base;
+	private double height;
 	
-	public Triangle(int base, int height) {
+	public Triangle(double base, double height) {
 		this.base = base;
 		this.height = height;
 	}
 	
 	@Override
 	public double area() {
-		int b = base;
-		int h = height;
+		double b = base;
+		double h = height;
 
-		double area = ((1/2) * b) * h;
+		double area = (b * h) * 1/2;
 		return area;	
 	}
 
