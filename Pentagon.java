@@ -1,19 +1,15 @@
 import java.lang.Math;
 
-public class Pentagon extends Shape{
-	private int sideLength;
-
-	public Pentagon(int sideLength) {
-		this.sideLength = sideLength;		
+public class Pentagon extends Shape {
+	public double sideLength;
+	
+	public Pentagon(double sideLength) {
+		this.sideLength = sideLength;
 	}
 
 	@Override
-	public double area() {
-		int a = sideLength;
-		double apothem = sideLength / (2 * Math.tan(Math.PI/5));
-		double perimeter = 5 * sideLength;
-		double area = (perimeter * apothem) * 2;
-		return area;
+	public double area(){
+		double area = (5 * Math.pow(sideLength, 2)) / (4 * Math.tan(Math.PI / 5));
+		return area; 
 	}
 }
-
